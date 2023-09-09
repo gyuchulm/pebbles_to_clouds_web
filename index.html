@@ -39,6 +39,9 @@
     <link rel="stylesheet" type="text/css" href="css/colors/color-1.css">
     <!-- Template Styles End -->
 
+    <!-- css from ravejs -->
+    <link rel="stylesheet" type="text/css" href="css/ravejs_style.css">
+
     <!-- Custom Browser Color Start -->
     <meta name="theme-color" content="#0c0426">
     <meta name="msapplication-navbutton-color" content="#0c0426">
@@ -332,41 +335,67 @@
             <!-- Main Media Content Start -->
             <div class="mainmedia__container">
               <div class="mainmedia__content">
-                <div id="rnbo-root">
-                  <div>
-                      <h1 id="patcher-title">Unnamed patcher</h1>
+                <div class="content_rave">
+                  <div class="section_rave">
+                    <h2>I - Audio source selection</h2>
+                    <input
+                      type="button"
+                      value="Load default sample"
+                      onclick="loadCantina();"
+                    />
+                    <div class="group">
+                      <input
+                        type="file"
+                        id="audio-file"
+                        accept="audio/mpeg, audio/ogg, audio/*"
+                      />
+                      <input type="button" value="Load" onclick="loadUploadedFile();" />
+                    </div>
+                    <input
+                      id="record-button"
+                      type="button"
+                      value="Record from microphone"
+                      onclick="toogleRecording();"
+                    />
                   </div>
-                  <div id="rnbo-clickable-keyboard">
-                      <h2>MIDI Keyboard</h2>
-                      <em id="no-midi-label">No MIDI input</em>
+            
+                  <div class="section_rave">
+                    <h2>II - Audio transfer</h2>
+                    Select model :
+                    <select name="Model" id="model">
+                      <option value="models/rquiqui_last.onnx">rquiqui_last</option>
+                      <option value="models/artifact_last.onnx">artifact_last</option>
+                      <option value="models/biomech_onnx.onnx">biomech_onnx</option>
+                      <option value="models/budha.onnx">budha</option>
+                    </select>
+            
+                    <div class="flexRow">
+                      <input
+                        id="play_input"
+                        type="button"
+                        value="Play input"
+                        onclick="playInput();"
+                        disabled="true"
+                      />
+                      <input
+                        id="ravify_button"
+                        type="button"
+                        value="Transfer"
+                        onclick="transfer();"
+                        disabled="true"
+                      />
+                      <input
+                        id="play_output"
+                        type="button"
+                        value="Play output"
+                        onclick="playOutput();"
+                        disabled="true"
+                      />
+                    </div>
+                    <a id="download_link" href=""></a>
                   </div>
-                  <div id="rnbo-inports">
-                     
-                      <form id="inport-form" className="inport">
-                          <div className="inport-input">
-                              <select id="inport-select"></select>
-                              <input id="inport-text" type="text"></input>
-                              <input id="inport-submit" className="smallButton" type="submit" value="Send"/>
-                          </div>
-                      </form>
-                  </div>
-                  <div id="rnbo-console">
-                      
-                      <div id="rnbo-console-div">
-                          <p id="rnbo-console-readout">Waiting for messages...</p>
-                          <em id="rnbo-console-description">Check the developer console for more messages from the RNBO device</em>
-                      </div>
-                  </div>
-                  <div id="rnbo-presets">
-                      <h1>Presetsdddd</h1>
-                      <em id="no-presets-label">No presets defined</em>
-                      <select id="preset-select"></select>
-                  </div>
-                  <div id="rnbo-parameter-sliders">
-                      <h2>Parameters_ddsdfsf</h2>
-                      <em id="no-param-label">No parameters</em>
-                  </div>
-              </div>
+                </div>
+                
                 
                 
                 <!-- Section Image Background Start -->
@@ -1076,7 +1105,11 @@
     <script src="js/carousel/bootstrap.min.js"></script>
     <script src="js/carousel/owl.carousel.min.js"></script>
     <script src="js/carousel/main.js"></script>
-
+    
+    <!-- ravejs -->
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.15.0/dist/ort.min.js"></script>
+    <script src="js/buffer_to_wav.js"></script>
+    <script src="js/rave.js"></script>
 
   </body>
 

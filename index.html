@@ -39,6 +39,9 @@
     <link rel="stylesheet" type="text/css" href="css/colors/color-1.css">
     <!-- Template Styles End -->
 
+    <!-- css from ravejs -->
+    <link rel="stylesheet" type="text/css" href="css/ravejs_style.css">
+
     <!-- Custom Browser Color Start -->
     <meta name="theme-color" content="#0c0426">
     <meta name="msapplication-navbutton-color" content="#0c0426">
@@ -332,67 +335,67 @@
             <!-- Main Media Content Start -->
             <div class="mainmedia__container">
               <div class="mainmedia__content">
-
-                <div class="section">
-                  <h2>I - Audio source selection</h2>
-                  <input
-                    type="button"
-                    value="Load default sample"
-                    onclick="loadCantina();"
-                  />
-                  <div class="group">
+                <div class="content_rave">
+                  <div class="section_rave">
+                    <h2>I - Audio source selection</h2>
                     <input
-                      type="file"
-                      id="audio-file"
-                      accept="audio/mpeg, audio/ogg, audio/*"
-                    />
-                    <input type="button" value="Load" onclick="loadUploadedFile();" />
-                  </div>
-                  <input
-                    id="record-button"
-                    type="button"
-                    value="Record from microphone"
-                    onclick="toogleRecording();"
-                  />
-                </div>
-          
-                <div class="section">
-                  <h2>II - Audio transfer</h2>
-                  Select model :
-                  <select name="Model" id="model">
-                    <option value="models/rquiqui_last.onnx">rquiqui_last</option>
-                    <option value="models/artifact_last.onnx">artifact_last</option>
-                    <option value="models/biomech_onnx.onnx">biomech_onnx</option>
-                    <option value="models/budha.onnx">budha</option>
-                  </select>
-                  <!-- debug message to get index from owl carousel -->
-                  <p id="current_model">No model selected</p>
-          
-                  <div class="flexRow">
-                    <input
-                      id="play_input"
                       type="button"
-                      value="Play input"
-                      onclick="playInput();"
-                      disabled="true"
+                      value="Load default sample"
+                      onclick="loadCantina();"
                     />
+                    <div class="group">
+                      <input
+                        type="file"
+                        id="audio-file"
+                        accept="audio/mpeg, audio/ogg, audio/*"
+                      />
+                      <input type="button" value="Load" onclick="loadUploadedFile();" />
+                    </div>
                     <input
-                      id="ravify_button"
+                      id="record-button"
                       type="button"
-                      value="Transfer"
-                      onclick="transfer();"
-                      disabled="true"
-                    />
-                    <input
-                      id="play_output"
-                      type="button"
-                      value="Play output"
-                      onclick="playOutput();"
-                      disabled="true"
+                      value="Record from microphone"
+                      onclick="toogleRecording();"
                     />
                   </div>
-                  <a id="download_link" href=""></a>
+            
+                  <div class="section_rave">
+                    <h2>II - Audio transfer</h2>
+                    Select model :
+                    <select name="Model" id="model">
+                      <option value="models/rquiqui_last.onnx">rquiqui_last</option>
+                      <option value="models/artifact_last.onnx">artifact_last</option>
+                      <option value="models/biomech_onnx.onnx">biomech_onnx</option>
+                      <option value="models/budha.onnx">budha</option>
+                    </select>
+            
+                    <div class="flexRow">
+                      <input
+                        id="play_input"
+                        type="button"
+                        value="Play input"
+                        onclick="playInput();"
+                        disabled="true"
+                      />
+                      <input
+                        id="ravify_button"
+                        type="button"
+                        value="Transfer"
+                        onclick="transfer();"
+                        disabled="true"
+                      />
+                      <input
+                        id="play_output"
+                        type="button"
+                        value="Play output"
+                        onclick="playOutput();"
+                        disabled="true"
+                      />
+                    </div>
+                    <a id="download_link" href=""></a>
+                  </div>
                 </div>
+                
                 
                 
                 <!-- Section Image Background Start -->

@@ -435,11 +435,11 @@ blockquote.light cite {
 }
 
 .main__content {
-  background-color: #f2eeeeaa;
+  background-color: #ffffffaa;
 }
 
 .main__media {
-  background-color: #f2eeeeaa;
+  background-color: #ffffffd3; 
   
   /*background-image: url("../../img/svg/bg-gradient-main.svg");*/
 }

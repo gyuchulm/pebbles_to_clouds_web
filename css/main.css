@@ -1648,7 +1648,7 @@ form .inputs-description {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-color: #606060;
+  /*background-color: #60606000;*/
   background-repeat: no-repeat;
   background-position: center center;
   -moz-background-size: cover;

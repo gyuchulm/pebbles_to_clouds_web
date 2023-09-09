@@ -166,19 +166,3 @@ const raveForward = async (buffer) => {
   ravifyButton.disabled = false;
   return audio_out;
 };
-
-//according to the owlcarousel2 docs ()
-
-// Listen to owl events:
-  //owl2.on('changed.owl.carousel', function(carousel_event) {
-  //let cindex = carousel_event.item.index; //get item index from carousel
-  //let current_model_text = document.getElementById("current_model");
-  //current_model_text.textContent=cindex;
-//})
-
-function callback(carousel_event) {
-  let cindex = carousel_event.item.index; //get item index from carousel
-  let num_items = carousel_event.page.count;
-  let current_model_text = document.getElementById("current_model");
-  current_model_text.textContent=cindex+"/"+num_items;
-}

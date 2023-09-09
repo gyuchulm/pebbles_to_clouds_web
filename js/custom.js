@@ -190,7 +190,7 @@ $(window).on("load", function() {
     particlesJS('particles-js', {
         "particles": {
           "number": {
-            "value": 220,
+            "value": 250,
             "density": {
               "enable": true,
               "value_area": 800
@@ -216,7 +216,7 @@ $(window).on("load", function() {
             }
           },
           "opacity": {
-            "value": 1,
+            "value": 0.5,
             "random": true,
             "anim": {
               "enable": true,

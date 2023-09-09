@@ -436,11 +436,11 @@ blockquote.light cite {
 
 /* 왼쪽 */
 .main__content {
-  background-color: #ffffffaa;
+  background-color: #ffffff3a;
 }
 /*오른쪽 */
 .main__media {
-  background-color: #ffffffaa; 
+  background-color: #ffffff3a; 
   
   /*background-image: url("../../img/svg/bg-gradient-main.svg");*/
 }

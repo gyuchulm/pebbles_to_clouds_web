@@ -225,9 +225,14 @@ img {
   overflow: hidden !important;
 }
 
+.bg {
+
+}
+
 .fullheight {
   position: static;
   height: auto;
+
 }
 @media only screen and (min-width: 1200px) {
   .fullheight {

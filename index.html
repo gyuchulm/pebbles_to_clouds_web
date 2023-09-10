@@ -165,19 +165,14 @@
     <!-- Main Section Start -->
     <section id="main" class="main">
       
-     
+      <div class="container-fluid p-0 fullheight">
        
-        
-      <div class="container-fluid fullheight">
-       
-        
-          
-        <div class="row g-0 fullheight">
-          
+        <div id="particles-js"></div>
+        <div class="row g-0 fullheight"> 
           
           <!-- Main Section Content Start -->
-         
-  
+          
+          
           <div class="col-12 col-xl-6 main__content">
             
             <!-- Main Header Start -->
@@ -198,53 +193,41 @@
             <!-- Main Headline Start -->
             <!-- 왼쪽 -->
             <div class="main_">
-              
               <div class="mainmedia__container">
+              <h1> mainmedia__container</h1>
+                
                 <div class="mainmedia__content">
                     <!--<div class="mainmedia__image main-image-c1"></div>-->
-
-                    <div class="content">
-    
-                      <div class="container">
-                        <div class="owl-carousel owl-1">
-                  
-                          <div class="media-29121 overlay" style="background-image: url('images/hero_1.jpg');">
-                            <div class="container">
-                              <div class="row justify-content-center align-items-center text-center">
-                                <div class="col-md-7">
-                                  <h2>Impedit Ipsam Quae Natus</h2>
-                                </div>
-                              </div>
-                            </div>
-                          </div> <!-- .item -->
-                          <div class="media-29121 overlay" style="background-image: url('images/hero_2.jpg');">
-                            <div class="container">
-                              <div class="row justify-content-center align-items-center text-center">
-                                <div class="col-md-7">
-                                  <h2>Impedit Ipsam Quae Natus</h2>
-                                </div>
-                              </div>
-                            </div>
-                          </div> <!-- .item -->
-                          <div class="media-29121 overlay" style="background-image: url('images/hero_3.jpg');">
-                            <div class="container">
-                              <div class="row justify-content-center align-items-center text-center">
-                                <div class="col-md-7">
-                                  <h2>Impedit Ipsam Quae Natus</h2>
-                                </div>
-                              </div>
-                            </div>
-                          </div> <!-- .item -->
-                  
+                    <div class="content_rave">
+                      <div class="section_rave">
+                        <h2>I - Audio source selection</h2>
+                        <input
+                          type="button"
+                          value="Load default sample"
+                          onclick="loadCantina();"
+                        />
+                        <div class="group">
+                          <input
+                            type="file"
+                            id="audio-file"
+                            accept="audio/mpeg, audio/ogg, audio/*"
+                          />
+                          <input type="button" value="Load" onclick="loadUploadedFile();" />
                         </div>
+                        <input
+                          id="record-button"
+                          type="button"
+                          value="Record from microphone"
+                          onclick="toogleRecording();"
+                        />
                       </div>
-                    </div>
+                   </div>>
 
 
 
-                  </div>
-                  </div>
-            </div>
+                </div>
+               </div>
+             </div>
             <!-- Main Headline End -->
 
             <!-- Notify Me Popup Start -->
@@ -338,41 +321,16 @@
 
           </div>
           <!-- Main Section Content End -->
-          
+         
           <!-- Main Section Media Start -->
-          <div class="col-12 col-xl-6 main__content"> 
-            
+        <div class="col-12 col-xl-6 main__content"> 
+          
             <!-- 오른쪽-->
             <!-- Main Media Content Start -->
-            
             <div class="mainmedia__container">
-              <h1> text </h1>
               <div class="mainmedia__content">
                 
                 <div class="content_rave">
-                  <div class="section_rave">
-                    <h2>I - Audio source selection</h2>
-                    <input
-                      type="button"
-                      value="Load default sample"
-                      onclick="loadCantina();"
-                    />
-                    <div class="group">
-                      <input
-                        type="file"
-                        id="audio-file"
-                        accept="audio/mpeg, audio/ogg, audio/*"
-                      />
-                      <input type="button" value="Load" onclick="loadUploadedFile();" />
-                    </div>
-                    <input
-                      id="record-button"
-                      type="button"
-                      value="Record from microphone"
-                      onclick="toogleRecording();"
-                    />
-                  </div>
-            
                   <div class="section_rave">
                     <h2>II - Audio transfer</h2>
                     Select model :
@@ -430,14 +388,13 @@
             </div>
             <!-- Copyright End -->
 
-          
+          </div>
           <!-- Main Section Media End -->
 
-       </div>
+       
       </div>
       </div>
     </section>
-    
     <!-- Main Section End -->
 
     <!-- About Section Start -->

@@ -1449,6 +1449,7 @@ form .inputs-description {
   height: 100%;
   min-height: 320px;
   background-color: transparent;
+  z-index: 1;
 }
 
 /* ------------------------------------------------*/

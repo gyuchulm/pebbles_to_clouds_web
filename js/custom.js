@@ -190,7 +190,7 @@ $(window).on("load", function() {
     particlesJS('particles-js', {
         "particles": {
           "number": {
-            "value": 220,
+            "value": 140,
             "density": {
               "enable": true,
               "value_area": 800
@@ -216,7 +216,7 @@ $(window).on("load", function() {
             }
           },
           "opacity": {
-            "value": 1,
+            "value": 0.5,
             "random": true,
             "anim": {
               "enable": true,
@@ -238,7 +238,7 @@ $(window).on("load", function() {
           "line_linked": {
             "enable": true,
             "distance": 180,
-            "color": "#e83845",
+            "color": "#ffffff",
             "opacity": 0.3,
             "width": 1
           },

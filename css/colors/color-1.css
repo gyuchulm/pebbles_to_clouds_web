@@ -431,16 +431,16 @@ blockquote.light cite {
 /* Main Section Colors Start 컬리 칼라*/
 /* ------------------------------------------------*/
 .main {
-  background-color: #00000000;
+  background-color: #dfceceeb;
 }
 
 /* 왼쪽 */
 .main__content {
-  background-color: #ffffffaa;
+  background-color: #6fb78600;
 }
 /*오른쪽 */
 .main__media {
-  background-color: #ffffffaa; 
+  background-color: #5619933a; 
   
   /*background-image: url("../../img/svg/bg-gradient-main.svg");*/
 }

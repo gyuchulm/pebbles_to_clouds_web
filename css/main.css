@@ -222,12 +222,17 @@ img {
 }
 
 .overflow-hidden {
-  overflow: hidden !important;
+  overflow:  !important;
+}
+
+.bg {
+
 }
 
 .fullheight {
-  position: static;
-  height: auto;
+  position: relative;
+  height: 100%;
+
 }
 @media only screen and (min-width: 1200px) {
   .fullheight {
@@ -1444,6 +1449,7 @@ form .inputs-description {
   height: 100%;
   min-height: 320px;
   background-color: transparent;
+  z-index: 1;
 }
 
 /* ------------------------------------------------*/

@@ -222,7 +222,7 @@ img {
 }
 
 .overflow-hidden {
-  overflow:  !important;
+  overflow: hidden !important;
 }
 
 .bg {

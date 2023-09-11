@@ -45,6 +45,7 @@ h2 {
   align-content: center;
   gap: 15px;
   height: 90vh;
+  z-index: 3;
 }
 
 .section_rave {
@@ -58,6 +59,7 @@ h2 {
   align-items: center;
   align-content: center;
   gap: var(--default-gap);
+  z-index : 3;
 }
 
 .flexRow {

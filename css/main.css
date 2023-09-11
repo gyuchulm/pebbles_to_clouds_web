@@ -959,6 +959,7 @@ blockquote.light cite {
           transform: translateY(-50%);
   width: 48px;
   height: 2px;
+  z-in
   background-color: transparent;
 }
 .menu-trigger span:before, .menu-trigger span::after {

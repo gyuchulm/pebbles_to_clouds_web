@@ -225,9 +225,14 @@ img {
   overflow: hidden !important;
 }
 
+.bg {
+
+}
+
 .fullheight {
-  position: static;
-  height: auto;
+  position: relative;
+  height: 100%;
+
 }
 @media only screen and (min-width: 1200px) {
   .fullheight {
@@ -457,12 +462,14 @@ body.loaded .rotate-object {
 h1 {
   display: inline-block;
   position: relative;
-  font: normal 300 4.2rem/1.2 "IBMPlexSans", serif;
+  font: normal 30 4.2rem/1.2 "IBMPlexSans", serif;
   color: #1a1a1a;
   letter-spacing: -0.1rem;
   margin-bottom: 2.3rem;
   margin-left: -2px;
   white-space: nowrap;
+
+
 }
 h1.light {
   color: #ffffff;
@@ -582,6 +589,7 @@ h2 {
   letter-spacing: -0.1rem;
   margin-left: -2px;
   color: #1a1a1a;
+  /* text-align: center;*/
 }
 h2::after {
   content: "";
@@ -750,13 +758,16 @@ h4.light small {
 }
 
 h5 {
-  font: normal 500 1.6rem/1.2 "IBMPlexSans", serif;
-  text-transform: uppercase;
-  letter-spacing: 0.06rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: normal 400 2.4rem/1.2 "IBMPlexSans", serif;
+  letter-spacing: -0.1rem;
   color: #1a1a1a;
+  height: 3.4rem;
 }
 h5.light {
-  color: #ffffff;
+  color: #444444;
 }
 
 p {
@@ -954,6 +965,7 @@ blockquote.light cite {
           transform: translateY(-50%);
   width: 48px;
   height: 2px;
+  z-in
   background-color: transparent;
 }
 .menu-trigger span:before, .menu-trigger span::after {
@@ -1444,6 +1456,7 @@ form .inputs-description {
   height: 100%;
   min-height: 320px;
   background-color: transparent;
+  z-index: 3;
 }
 
 /* ------------------------------------------------*/
@@ -1484,12 +1497,13 @@ form .inputs-description {
   opacity: 0;
   visibility: hidden;
 }
-.main.menu-is-visible .main__content {
+.main.menu-is-visible .main__content, .main.menu-is-visible .container, .main.menu-is-visible .rotate-object, body .main.menu-is-visible .main__header {
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
+  pointer-events: none;
 }
 .main.move-in {
   -webkit-transform: translateX(0);
@@ -1682,11 +1696,15 @@ form .inputs-description {
   .mainmedia__container {
     position: absolute;
     top: 10rem;
-    left: 16rem;
+    left: 10rem;
     width: -moz-calc(100% - 32rem);
     width: calc(100% - 32rem);
     height: -moz-calc(100% - 20rem);
     height: calc(100% - 20rem);
+  }
+  .mainmedia__container.right {
+    left: auto;
+    right: 10rem;
   }
 }
 
